@@ -1,0 +1,36 @@
+@mixin font($fs, $lh, $ls, $fw) {
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+  font-weight: $fw;
+}
+
+@mixin media-min-width($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin media-max-width($size) {
+  @media screen and (max-width: $size) {
+    @content;
+  }
+}
+
+@mixin media-min-and-max-width($min-size, $max-size) {
+  @media screen and (min-width: $min-size) and (max-width: $max-size) {
+    @content;
+  }
+}
+
+@mixin calc-flex-basis($count) {
+  flex-basis: calc((100% - 30px * ($count - 1)) / $count);
+}
+
+@mixin ratio2x {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @content;
+  }
+}

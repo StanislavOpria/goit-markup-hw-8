@@ -1,0 +1,27 @@
+//utils-folder
+@import "./utils/variables";
+@import "./utils/reset";
+@import "./utils/visually-hidden";
+@import "./utils/mixin";
+
+//components-folder
+@import "./components/body";
+@import "./components/container";
+@import "./components/logo";
+@import "./components/title";
+@import "./components/btn";
+//main-page
+@import "./components/header";
+@import "./components/main-nav";
+@import "./components/mob-menu";
+@import "./components/hero";
+@import "./components/featurs";
+@import "./components/activity";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/footer";
+@import "./components/backdrop-modal";
+@import "./components/register-form";
+//portfolio-page
+@import "./components/filter";
+@import "./components/projects";
